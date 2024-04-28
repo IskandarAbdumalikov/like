@@ -886,6 +886,14 @@ input {
   right: 5px;
 }
 
+.nothing__img {
+  width: 80%;
+  margin: 0 auto;
+}
+.nothing__img img {
+  width: 100%;
+}
+
 #footer__top {
   padding: 20px 0px;
   display: flex;

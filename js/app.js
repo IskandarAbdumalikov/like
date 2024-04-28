@@ -7,7 +7,7 @@ let likes = document.querySelector(".like__counts");
 const LIMIT_COUNT = 4;
 let count = 1;
 let wrapper = document.querySelector(".wrapper");
-let likesCount = 0
+let likesCount = 0;
 console.log(likesCount);
 // Funksiyalar
 async function fetchData(api) {
@@ -153,13 +153,18 @@ const addToWishList = async (id) => {
       let updatedWishlist = [];
       if (index < 0) {
         updatedWishlist = [...wishlist, product];
-        likesCount++
+        likesCount++;
+        localStorage.setItem("likeCounts", likesCount);
       } else {
         updatedWishlist = wishlist.filter((el) => el.id !== product.id);
-        likesCount--
+        if (likesCount > 0) {
+          likesCount--;
+          localStorage.setItem("likeCounts", likesCount);
+        }
       }
       localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
-      likes.innerHTML = likesCount
+      likes.innerHTML = likesCount;
+
     })
     .catch((err) => console.log(err));
 

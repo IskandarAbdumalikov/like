@@ -1,5 +1,14 @@
 let wrapper = document.querySelector(".wrapper__wishlist");
 let wishlist = JSON.parse(localStorage.getItem("wishlist"));
+let likeCards = JSON.parse(localStorage.getItem("wishlist"));
+let noneWishlist = document.querySelector(".none__wishlist");
+let likeCardsCount = likeCards.length;
+
+if (likeCardsCount <= 0) {
+  noneWishlist.style.display = "block";
+} else if (likeCardsCount > 0) {
+  noneWishlist.style.display = "none";
+}
 
 function createCard(data) {
   let cards = "";
@@ -30,6 +39,7 @@ const addToWishList = (id) => {
   let updatedWishlist = wishlist.filter((el) => el.id !== +id);
   localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
   createCard(updatedWishlist);
+  
 };
 
 wrapper.addEventListener("click", (e) => {
@@ -43,4 +53,6 @@ wrapper.addEventListener("click", (e) => {
     let id = e.target.closest(".card").dataset.id;
     addToWishList(id);
   }
+
+ 
 });
