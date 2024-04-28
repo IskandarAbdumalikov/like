@@ -1,0 +1,249 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+select {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  align-self: self-end;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.error {
+  color: red;
+  opacity: 0;
+  user-select: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #ddd;
+  overflow: hidden;
+  height: 500px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+.card button {
+  padding: 10px 15px;
+  border: 1px solid #46a358;
+  border-radius: 5px;
+  background: transparent;
+  transition: 0.4s;
+}
+
+.card__btn:hover {
+  background: #46a358;
+  color: $secondaryColor;
+}
+
+.card__desc {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card__img {
+  width: 100%;
+  height: 60%;
+  padding: 10px;
+  object-fit: contain;
+}
+
+.card h3 {
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.see__more__btn {
+  padding: 15px 20px;
+  display: block;
+  margin: 20px auto;
+  background: #46a358;
+  color: white;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.see__more__btn:hover {
+  background: green;
+}
+
+.see__more__btn:disabled {
+  opacity: 0.6;
+  cursor: no-drop;
+}
+
+.see__more__btn:disabled:hover {
+  background-color: #46a358;
+}
+
+@media (max-width: 1300px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
+
+//
+.single__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 30px 10%;
+}
+
+.content__info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.content__info button {
+  padding: 10px 15px;
+}
+
+.rating {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.rating img {
+  width: 30px;
+  height: 30px;
+}
+
+.price {
+  color: #46a358;
+}
+
+.logIN__btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: $hoverColor;
+  color: $secondaryColor;
+  border: 1px solid $hoverColor;
+  transition: 0.4s;
+}
+
+.logIN__btn:hover {
+  background: $secondaryColor;
+  color: $hoverColor;
+}
+
+//
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__left {
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero__left h1{
+  font-size: 75px;
+}
+
+.hero__right img {
+  width: 100%;
+}
+
+.small__images {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.self__img {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media (max-width: 950px) {
+  #hero {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hero__left {
+    width: 100%;
+  }
+}
+
+.hero__left__btn {
+  width: 200px;
+  height: 50px;
+  border: 1px solid $hoverColor;
+  border-radius: 5px;
+  color: $secondaryColor;
+  background: $hoverColor;
+  transition: 0.4s;
+}
+
+.hero__left__btn:hover {
+  color: $hoverColor;
+  background: $secondaryColor;
+}
+
+.green {
+  color: #46a358;
+}
+
+.star{
+  width: 25px !important;
+}
+
+.card{
+  position: relative;
+}
+
+#like{
+  width: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}

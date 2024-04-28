@@ -1,0 +1,21 @@
+.wrapper__wishlist{
+  padding: 100px 0px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  .card{
+    height: 600px;
+    padding: 10px;
+    width: 400px;
+    position: relative;
+    .like{
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GREEN SHOP</title>
+    <link rel="icon" href="images/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.min.css" />
+  </head>
+
+  <body>
+    <a href="#hero">
+      <div class="back-top">
+        <i class="fa-solid fa-arrow-up-long"></i>
+      </div>
+    </a>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav df">
+          <div class="header__nav__logo">
+            <a href="#"><img src="images/logo.svg" alt="" /></a>
+          </div>
+          <ul class="header__nav__right__list df">
+            <li class="header__nav__right__list__item">
+              <a href="#hero">Home</a>
+            </li>
+            <li class="header__nav__right__list__item">
+              <a href="#">Shop</a>
+            </li>
+            <li class="header__nav__right__list__item">
+              <a href="#">Plant Care</a>
+            </li>
+            <li class="header__nav__right__list__item">
+              <a href="#">Blogs</a>
+            </li>
+            <li class="header__nav__right__list__close">
+              <i class="fa-solid fa-x"></i>
+            </li>
+          </ul>
+          <div class="header__nav__right__btns df">
+            <div style="gap: 20px" class="tel df">
+              <form action="" class="search__form">
+                <input
+                  class="search__input"
+                  placeholder="search..."
+                  type="text"
+                />
+                <button class="search__btn">
+                  <img src="/images/search.svg" alt="" />
+                </button>
+              </form>
+              <a href="/pages/wishlist.html"><i  class="fa-regular fa-heart"></i><sup class="like__counts"></sup></a>
+              <img class="korzina__img" src="/images/korzina.svg" alt="" />
+            </div>
+            <button class="logIN__btn">
+              <a class="navbar__link">Log in</a>
+            </button>
+            <button class="header__nav__right__btns__hamburger">
+              <span class="header__nav__right__btns__hamburger__line"></span>
+              <span class="header__nav__right__btns__hamburger__line"></span>
+              <span class="header__nav__right__btns__hamburger__line"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="container">
+        <div class="hero__left">
+          <h3 class="welcome">Welcome to GreenShop</h3>
+          <h1>Let’s Make a Better <span class="green">Planet</span></h1>
+          <p>
+            We are an online plant shop offering a wide range of cheap and
+            trendy plants. Use our plants to create an unique Urban Jungle.
+            Order your favorite plants!
+          </p>
+          <button class="hero__left__btn">SHOP NOW</button>
+        </div>
+        <div class="hero__right">
+          <img src="/images/hero.svg" alt="" />
+        </div>
+      </section>
+      <section id="products" class="container products">
+        <div class="module">
+          <div class="register__module">
+            <div class="register__module__top">
+              <button class="x__button__register">
+                <img src="/images/x.svg" alt="" />
+              </button>
+              <div class="register__module__top__btns">
+                <button class="login__link__register">Login</button> |
+                <button class="register__link__register">Register</button>
+              </div>
+            </div>
+
+            <form class="register__form" action="">
+              <h3>Enter your username and password to register.</h3>
+              <input placeholder="Username" required type="text" />
+              <input
+                placeholder="Enter your email address"
+                required
+                type="email"
+              />
+              <input placeholder="Password" required type="password" />
+              <input placeholder="Confirm password" required type="text" />
+              <button class="register__btn">Register</button>
+            </form>
+            <div class="register__module__bottom">
+              <img src="/images/orloginwith.svg" alt="" />
+              <img src="/images/google.svg" alt="" />
+              <img src="/images/facebook.svg" alt="" />
+            </div>
+          </div>
+          <div class="login__module">
+            <div class="login__module__top">
+              <button class="x__button__login">
+                <img src="/images/x.svg" alt="" />
+              </button>
+              <div class="login__module__top__btns">
+                <button class="login__link">Login</button> |
+                <button class="register__link">Register</button>
+              </div>
+            </div>
+
+            <form class="login__form" action="">
+              <h3>Enter your username and password to login.</h3>
+              <p style="color: red" class="error">
+                Your email or password is incorrect
+              </p>
+              <input
+                class="input__username"
+                placeholder="Username"
+                value="atuny0"
+                required
+                type="text"
+              />
+              <div class="password__input">
+                <input
+                  value="9uQFF1Lh"
+                  class="input__password"
+                  placeholder="Password"
+                  required
+                  type="password"
+                />
+                <div style="gap: 10px" class="eye__imges df">
+                  <img class="eye" width="25" src="/images/eye.svg" alt="" />
+                  <img
+                    class="eye-slash"
+                    width="25"
+                    src="/images/eye-slash.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <p>Forgot Password ?</p>
+              <button class="login__btn">Login</button>
+            </form>
+            <div class="login__module__bottom">
+              <img src="/images/orloginwith.svg" alt="" />
+              <img src="/images/google.svg" alt="" />
+              <img src="/images/facebook.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <select name="select" id="select" class="select"></select>
+        <div class="cards">
+          <div class="wrapper"></div>
+          <button class="see__more__btn">See more</button>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer__top">
+        <div class="container" id="footer__top">
+          <img src="/images/logo.svg" alt="" />
+          <p>70 West Buckingham Ave. Farmingdale, NY 11735</p>
+          <a href="email:contact@greenshop.com">contact@greenshop.com</a>
+          <a href="tel:+88 01911 717 490">+88 01911 717 490</a>
+        </div>
+      </div>
+      <div id="footer__middle">
+        <div class="footer__middle container">
+          <ul>
+            <h3>My Account</h3>
+            <a href="#">My Account</a>
+            <a href="#">Our stores </a>
+            <a href="#">Contact us </a>
+            <a href="#">Career </a>
+            <a href="#">Specials</a>
+          </ul>
+          <ul>
+            <h3>Help & Guide</h3>
+            <a href="#">My Account</a>
+            <a href="#">Our stores </a>
+            <a href="#">Contact us </a>
+            <a href="#">Career </a>
+            <a href="#">Specials</a>
+          </ul>
+          <ul>
+            <h3>Categories</h3>
+            <a href="#">House Plants </a>
+            <a href="#">Potter Plants </a>
+            <a href="#">Seeds </a>
+            <a href="#">Small Plants </a>
+            <a href="#">Accessories</a>
+          </ul>
+          <ul>
+            <h3>Social media</h3>
+            <a href="#"><img src="/images/socials.svg" alt="" /></a>
+            <h3>We accept</h3>
+            <a href="#"><img src="/images/bank.svg" alt="" /></a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="/js/modul.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+#hero__admin {
+  padding: 100px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.log__out__btn {
+  width: 150px;
+  height: 40px;
+  border: 1px solid $hoverColor;
+  background: $hoverColor;
+  color: $secondaryColor;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.log__out__btn:hover {
+  background: $secondaryColor;
+  color: $hoverColor;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero__middle form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero__right form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.star {
+  color: red;
+}
+
+.change__btn {
+  width: 150px;
+  height: 40px;
+  border: 1px solid $hoverColor;
+  background: $hoverColor;
+  color: $secondaryColor;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+
+.change__btn:hover {
+  background: $secondaryColor;
+  color: $hoverColor;
+}
+
+input {
+  padding: 10px 20px;
+  border: 1px solid $primaryColor;
+  outline: none;
+  border-radius: 5px;
+}
+
+
+@media (max-width:850px) {
+  #hero__admin {
+      grid-template-columns:1fr;
+    }
+}

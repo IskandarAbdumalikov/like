@@ -1,0 +1,146 @@
+.login__module,
+.register__module {
+  width: 500px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: $secondaryColor;
+}
+
+.module {
+  display: flex;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-86%,-50%);
+  transition: 0.4s;
+  z-index: 999;
+  width: 100%;
+  justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.error{
+  color: red;
+}
+
+
+.login__module__top,
+.register__module__top {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.login__module__top img,
+.register__module__top img {
+  width: 18px;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+
+.login__module__top__btns,
+.register__module__top__btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px auto;
+}
+
+.register__link,
+.login__link__register {
+  background: transparent;
+  color: $primaryColor;
+  font-size: 25px;
+}
+
+.login__link,
+.register__link__register {
+  color: $hoverColor;
+  font-size: 25px;
+  background: transparent;
+}
+
+.login__form,
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.login__form h3,
+.register__form h3 {
+  font-size: 16px;
+}
+
+.login__form input,
+.register__form input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid $primaryColor;
+}
+
+.login__form input:focus,
+.register__form input:focus {
+  border-color: $hoverColor;
+}
+
+.login__form p {
+  color: $hoverColor;
+  text-align: end;
+}
+
+.login__btn,
+.register__btn {
+  border: 1px solid $hoverColor;
+  border-radius: 5px;
+  background: $hoverColor;
+  color: $secondaryColor;
+  height: 50px;
+  font-size: 18px;
+}
+
+.login__btn:hover,
+.register__btn:hover {
+  background: $secondaryColor;
+  color: $hoverColor;
+  transition: 0.4s;
+}
+
+.login__module__bottom,
+.register__module__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.login__module__bottom img,
+.register__module__bottom img {
+  width: 100%;
+}
+
+.password__input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid $primaryColor;
+  border-radius: 5px;
+  padding-right: 10px;
+  input{
+    border: none;
+  }
+}
+
+
+.eye-slash{
+  display: none;
+}
+
+@media (max-width: 670px){
+  
+}

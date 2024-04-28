@@ -1,0 +1,36 @@
+#footer__top {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__top {
+  background: rgba($color: #46a358, $alpha: 0.1);
+}
+
+.footer__middle {
+  display: flex;
+  padding: 20px 0px;
+  align-items: center;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width:975px) {
+  #footer__top,.footer__middle{
+    flex-wrap: wrap;
+    gap: 40px;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+#footer__middle {
+  background: #fbfbfb;
+}
