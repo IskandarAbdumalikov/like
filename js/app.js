@@ -7,7 +7,7 @@ let likes = document.querySelector(".like__counts");
 const LIMIT_COUNT = 4;
 let count = 1;
 let wrapper = document.querySelector(".wrapper");
-let likesCount = JSON.parse(localStorage.getItem("wishlist")).length
+let likesCount = 0
 console.log(likesCount);
 // Funksiyalar
 async function fetchData(api) {
