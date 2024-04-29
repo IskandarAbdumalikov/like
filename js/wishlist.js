@@ -44,15 +44,13 @@ const addToWishList = (id) => {
 
 wrapper.addEventListener("click", (e) => {
   if (
-    e.target.className === "card__image" ||
-    e.target.className === "card__buy-btn"
+    e.target.className === "card__img" ||
+    e.target.className === "card__btn"
   ) {
     let id = e.target.closest(".card").dataset.id;
-    window.open(`./pages/product.html?productId=${id}`, "_self");
+    window.open(`./products.html?id=${id}`, "_self");
   } else if (e.target.className.includes("like")) {
     let id = e.target.closest(".card").dataset.id;
     addToWishList(id);
   }
-
- 
 });

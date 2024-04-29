@@ -116,11 +116,11 @@ fetchProducts(API_URL, "all");
 
 wrapper.addEventListener("click", (e) => {
   if (
-    e.target.className === "card__image" ||
-    e.target.className === "card__buy-btn"
+    e.target.className === "card__img" ||
+    e.target.className === "card__btn"
   ) {
     let id = e.target.closest(".card").dataset.id;
-    window.open(`./pages/product.html?productId=${id}`, "_self");
+    window.open(`./pages/products.html?id=${id}`, "_self");
   } else if (e.target.className.includes("like")) {
     let id = e.target.closest(".card").dataset.id;
     addToWishList(id);
@@ -164,7 +164,6 @@ const addToWishList = async (id) => {
       }
       localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
       likes.innerHTML = likesCount;
-
     })
     .catch((err) => console.log(err));
 
